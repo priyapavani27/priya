@@ -1,0 +1,28 @@
+public class Main {
+	public static void main(String[] args) {
+		int n=12345;
+		int r,count=0,num=0;
+		while(n>0)
+		{
+			r=n%10;
+			n=n/10;
+			if((r&1)==0)
+			{
+				count++;
+				
+			}
+			else
+			{
+				num++;
+					
+			}
+		}
+		System.out.println("even="+count);
+		System.out.println("odd="+num);
+		
+	}
+}
+
+out put:
+even=2
+odd=3
