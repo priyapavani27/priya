@@ -1,0 +1,31 @@
+import java.util.*;
+class Evenodd
+{
+	public static void main(String args[])
+	{
+		int n,r=0,s=0,m=0,i=0;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		while(n>0)
+		{
+			r=n%10;
+			s=(s*10)+r;
+			n=n/10;
+		}
+		while(s>0)
+		{
+			r=s%10;
+			s=s/10;
+			if(r%2==0)
+			m=(m*10)+r;
+			else
+			i=(i*10)+r;
+		}
+		System.out.print(m+"\t");
+		System.out.print(i);
+	}
+}
+
+Out put:
+24
+135
