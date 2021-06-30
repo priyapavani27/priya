@@ -1,0 +1,40 @@
+import java.util.*;
+class priya
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n,i;
+String s,y;
+char x;
+String g="";
+System.out.println("enter x");
+x=sc.next().charAt(0);
+System.out.println("enter y");
+y=sc.next();
+System.out.println("enter n");
+n=sc.nextInt();
+s=String.valueOf(n);
+for(i=0;i<=s.length()-1;i++)
+{
+if(s.charAt(i)== x)
+{
+g=g+y;
+}
+else
+{
+g=g+s.charAt(i);
+}
+}
+System.out.println(Integer.valueOf(g));
+}
+}
+
+out put:
+enter x
+1
+enter y
+8
+enter n
+16719
+86789
