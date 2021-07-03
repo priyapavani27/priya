@@ -1,0 +1,24 @@
+import java.util.*;
+class Main
+{
+	public static void main(String args[])
+	{
+		int n,mul,r=0;
+		Scanner s=new Scanner(System.in);
+		n=s.nextInt();
+		mul=n*n;
+		r=mul%100;
+		if(n==r)
+		System.out.println("automorphic");
+		else
+		System.out.println("not automorphic");
+	}
+}
+
+output:
+76
+automorphic
+25
+automorphic
+7
+not automorphic
