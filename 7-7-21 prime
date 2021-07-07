@@ -1,0 +1,41 @@
+import java.util.*;
+class Main
+{
+	public static void main (String args[])
+	{
+		System.out.print("Enter array size");
+		int i,j,size,count=0,pc=0;
+		Scanner Sc=new Scanner(System.in);
+		 size=Sc.nextInt();
+		int ar[]=new int[size];
+		System.out.print("Enter array elements");
+		for(i=0;i<size;i++)
+		{
+			ar[i]=Sc.nextInt();
+		}
+		for(i=0;i<size;i++)
+		{
+			count=0;
+			for(j=2;j<ar[i];j++)
+			{
+				if(ar[i]%j==0)
+				{
+				count=1;
+				break;
+				}
+			}
+			if(count!=1)
+			pc++;
+		}
+		System.out.print(pc);
+	}
+}
+
+output:
+Enter array size5
+Enter array elements2
+7
+3
+6
+5
+4
