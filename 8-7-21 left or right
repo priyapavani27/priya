@@ -1,0 +1,62 @@
+
+import java.util.*;
+class Main
+{
+	public static void main(String args[])
+	{
+		System.out.print("enter array size");
+		int i,size,r,l,res,temp;
+		Scanner s=new Scanner(System.in);
+		size=s.nextInt();
+		int a[]=new int[size];
+		System.out.print("enter no.of times to rotate right");
+		r=s.nextInt();
+		System.out.print("enter no.of times to rotate left");
+		l=s.nextInt();
+		System.out.print("enter array elements");
+		for(i=0;i<size;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		res=r-l;
+		if(res<0)
+		{
+			for(i=0;i<size;i++)
+			{
+				temp=a[0];
+				for(int j=a[i];j<size;j++)
+				{
+					a[j-1]=a[j];
+				}
+				a[size]=temp;
+			}
+		}
+		else
+		for(i=0;i<r;i++)
+		{
+			temp=a[size-1];
+			for(int j=size-2;j>=0;j--)
+			{
+				a[j+1]=a[j];
+			}
+			a[0]=temp;
+		}
+		for(int j=0;j<size;j++)
+		{
+		System.out.println(a[j]);
+		}
+	}
+}
+
+output:
+nter array size4
+enter no.of times to rotate right2
+enter no.of times to rotate left2
+enter array elements1
+2
+3
+4
+3
+4
+1
+2
