@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		String str;
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter a string");
+		str=s.nextLine();
+		String ch[]=str.split(" ");
+		int n=ch.length;
+			int i=0;
+		if(n==0)
+		System.out.print(n);
+		else
+		{
+		for(int j=0;j<n;j++)
+		{
+			String st=ch[j];
+			int m=st.length();
+			i=i+m;
+		}
+		}
+		System.out.print(i);
+	}
+}
+
+output:
+enter a stringpriya@27
+8
+
+
+
