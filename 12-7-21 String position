@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("enter a string:");
+		String str = s.nextLine();
+		int i,position;
+		System.out.print("position:");
+		position = s.nextInt();
+		System.out.print("new string:");
+		String newstr = s.next();
+		StringBuilder sb = new StringBuilder(str);
+		for(i = 0 ;i < sb.length(); i++)
+		{
+		    if((sb.charAt(i) == ' ') ||(i == 0))
+		    {
+		        sb.insert(i+position,newstr);
+		    }
+		}
+		System.out.print(sb.toString());
+	}
+}
+
+output:
+enter a string:hallo world
+position:3
+new string:hai
+halhailo wohairld
