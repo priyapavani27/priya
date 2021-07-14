@@ -1,0 +1,54 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		StringBuilder str=new StringBuilder(s.next());
+		int n,pos1,pos2;
+		n= s.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			pos1=s.nextInt();
+			String ch=s.next();
+			str=str.replace(pos1-1,pos1,ch);
+		}
+		System.out.println(str);
+		String str1=str.toString();
+		n=s.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			pos1=s.nextInt();
+			pos2=s.nextInt();
+			StringBuilder st=new StringBuilder(str.substring(pos1-1,pos2-1));
+			str=str.replace(pos1-1,pos2-1,st.reverse().toString());
+		}
+		System.out.println(str);
+	String str2=str.toString();
+		int count=0;
+		for(int i=0;i<str1.length();i++)
+		{
+			if(str1.charAt(i)==str2.charAt(i))
+			{
+				count++;
+
+			}
+		}
+		System.out.println(count);
+	}
+}	
+
+output:
+helloworld
+2
+1 a 8 x
+aellowoxld
+2 2 3
+2 4
+alelowoxld
+8
+
+
+
+
+
+
+
