@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("enter a string:");
+		StringBuilder str =new StringBuilder(s.nextLine());
+		for(int i=2;i<str.length();i++)
+		{
+			if((str.charAt(i-2)==str.charAt(i-1))&&(str.charAt(i-1)==str.charAt(i)))
+			{
+				str=str.delete(i-2,i+1);
+				i=1;
+			}
+		}
+		System.out.print(str);
+	}
+}
+
+output:
+enter a string:cabbaaabcc
+cacc
