@@ -1,0 +1,29 @@
+class Solution {
+    public int[] sortArrayByParityII(int[] nums) {
+        int n;
+        int i;
+        int index=0;
+        int count=1;
+        int res[]=new int[nums.length];
+        for(i=0;i<nums.length;i++)
+        {
+            if(nums[i]%2==0)
+            {
+                res[index]=nums[i];
+                index=index+2;
+            }
+            else
+            {
+                res[count]=nums[i];
+                count=count+2;
+                
+            }
+            
+                
+        }
+        
+        
+      return res;  
+    }
+    
+}
