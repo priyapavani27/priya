@@ -1,0 +1,24 @@
+import java.util.*;
+class Frame1
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		LinkedList<Integer> x=new LinkedList<Integer>();
+		int n;
+		int element;
+		System.out.print("enter number of elements to be list");
+		n=sc.nextInt();
+		System.out.print("enter elements are");
+		for(int i=0;i<n;i++)
+		{
+			x.add(sc.nextInt());
+		}
+		for(Integer i:x)
+		{
+			System.out.print(i+" ");
+		}
+	}
+}
+Output:
+enter number of elements to be listenter elements are10 10 20 30 40 
