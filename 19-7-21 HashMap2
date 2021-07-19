@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		HashMap<String,Integer>X=new
+		HashMap<String,Integer>();
+		Scanner Sc=new Scanner(System.in);
+		X.put("Sak",5);
+		X.put("varun",7);
+		X.put("vijay",3);
+		System.out.println(X);
+		System.out.println(X.get("Sak"));
+	}
+}
+
+output:
+{Sak=5, varun=7, vijay=3}
+5
