@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		HashMap<Integer,String>X=new
+		HashMap<Integer,String>();
+		Scanner Sc=new Scanner(System.in);
+		X.put(5,"John");
+		X.put(1,"Sam");
+		X.put(7,"Kim");
+		System.out.println(X);
+	}
+}
+
+output:
+{1=Sam, 5=John, 7=Kim}
