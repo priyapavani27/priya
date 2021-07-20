@@ -1,0 +1,46 @@
+
+
+
+import java.util.*;
+
+class StringsCount{
+
+    public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	int n;
+	System.out.println("enter n names");
+	n=sc.nextInt();
+    
+        String item[] = new String[n];
+	System.out.println("enter names");
+	for(int i=0;i<n;i++)
+	{
+	item[i]=sc.next();
+	}
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String t : item) {
+            if (map.containsKey(t)) {
+                map.put(t, map.get(t) + 1);
+
+            } else {
+                map.put(t, 1);
+            }
+        }
+        Set<String> keys = map.keySet();
+System.out.println("repeated names are:");
+        for (String key : keys) {
+		if(map.get(key)>2)
+{
+            System.out.println(key+"="+map.get(key));
+            
+        }
+}
+}
+}
+Output:
+enter n names
+enter names
+repeated names are:
+lakshmi=3
+rama=3
