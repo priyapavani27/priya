@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Integer>h1=new ArrayList<Integer>();
+		h1.add(30);
+		h1.add(40);
+		h1.add(15);
+		h1.add(20);
+		h1.add(25);
+		h1.add(7);
+		h1.add(99);
+		    System.out.println(h1);
+		    Iterator<Integer>z=h1.iterator();
+		    while(z.hasNext())
+		    {
+		        if(z.next()<25)
+		        z.remove();
+		    }
+		        System.out.println(h1);
+		    }
+		}
+    
+    output:
+    [30, 40, 15, 20, 25, 7, 99]
+    [30, 40, 25, 99]
+
+	
