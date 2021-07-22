@@ -1,0 +1,43 @@
+import java.util.*;
+class Main
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		Hashtable<Integer,Integer>x=new Hashtable<Integer,Integer>();
+		int n;
+		int key;
+		System.out.println("enter number of values");
+		n=sc.nextInt();
+		System.out.println("enter value to delete");
+		key=sc.nextInt();
+		int i;
+		System.out.println("enter values are");
+		for(i=0;i<n;i++)
+		{
+			x.put(sc.nextInt(),sc.nextInt());
+		}
+		if(x.containsKey(key))
+		{
+			x.remove(x.get(key));
+			System.out.println("after deletion value is"+x);
+		}
+		else
+		{
+			System.out.println("not found");
+		}
+	}
+}
+
+output:
+enter number of values
+5
+enter value to delete
+106
+enter values are
+101 50000
+102 45000
+103 35000
+104 40000
+105 45000
+not found
