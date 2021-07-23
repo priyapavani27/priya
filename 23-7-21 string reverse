@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	String S="ADITYA";
+	Stack<Character>Str=new Stack<Character>();
+    char[]ch=S.toCharArray();
+    for(int i=0;i<ch.length;i++)
+    {
+        Str.push(ch[i]);
+    }
+    for(int i=0;i<ch.length;i++)
+    {
+        System.out.print(Str.pop());
+    }
+    }
+	}
+  
+  output:
+  AYTIDA
